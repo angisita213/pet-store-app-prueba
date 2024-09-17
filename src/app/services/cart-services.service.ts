@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 // Definimos la interfaz para representar un producto
 interface Product {
@@ -9,7 +10,7 @@ interface Product {
   imagen: string;
 }
 
-@Injectable({
+@Injectable ({
   providedIn: 'root'
 })
 export class CartServicesService {
