@@ -14,11 +14,14 @@ export class CatalogoComponent {
 
   }
   
-  // crea un método para añadir un producto al carrito
-  
-  addToCart(product: any) { 
-    console.log(product)
-  }
+    // actualizar el método para añadir un producto al carrito mediante el servicio
+    addToCart(product: any) { 
+      // utilizacion del metodo addTocart del servicio cartServicesService 
+      this.cartServicesService.addToCart(product)
+      // utilizacion del metodo getCart del servicio cartServicesService 
+      //para mostrar en el console.log los producto añadidos
+      console.log( this.cartServicesService.getCart() )
+    }
   
 	//....
   products = [ {
