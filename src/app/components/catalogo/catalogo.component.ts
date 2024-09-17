@@ -14,19 +14,14 @@ export class CatalogoComponent {
 
   }
   
-  // actualizar el método para añadir un producto al carrito mediante el servicio
+  // crea un método para añadir un producto al carrito
+  
   addToCart(product: any) { 
-	  // utilizacion del metodo addTocart del servicio cartServicesService 
-    this.cartServicesService.addToCart(product)
-    // utilizacion del metodo getCart del servicio cartServicesService 
-    //para mostrar en el console.log los producto añadidos
-    console.log( this.cartServicesService.getCart() )
+    console.log(product)
   }
-
-}
-  // actulizar el array de productos con el atributo cantidad en cada producto
-  Products = [
-    {
+  
+	//....
+  products = [ {
       id:1,
       name: 'Bike_1',
       price: 120,
@@ -115,7 +110,6 @@ export class CatalogoComponent {
       inventory: 10,
       image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
       cantidad: 0
-    }, 
-    
-]
+    }, ]
 
+}
