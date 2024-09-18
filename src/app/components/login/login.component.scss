@@ -1,0 +1,81 @@
+/* Estilo general del formulario */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #e8f5e9; /* Fondo verde claro */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #c8e6c9; /* Borde verde pálido */
+    margin-top: 100px;
+  }
+  
+  /* Título del formulario */
+  .form-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #388e3c; /* Verde intenso */
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Estilo para cada grupo de formulario */
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .form-control {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #c8e6c9; /* Borde verde pálido */
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco para los campos de entrada */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Estilo para el campo de entrada cuando está enfocado */
+  .form-control:focus {
+    border-color: #388e3c; /* Verde intenso */
+    box-shadow: 0 0 8px rgba(56, 142, 60, 0.3);
+    outline: none;
+  }
+  
+/* Estilo para el botón de envío */
+.submit-button {
+    width: 100%; /* Asegura que el botón ocupe el ancho completo */
+    padding: 14px;
+    font-size: 18px;
+    color: #fff; /* Color del texto */
+    background-color: #388e3c; /* Verde intenso */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Estilo para el botón de envío cuando está deshabilitado */
+  .submit-button:disabled {
+    background-color: #b2dfdb; /* Verde pálido */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede hacer clic */
+  }
+  
+  /* Estilo para el botón de envío al pasar el cursor sobre él */
+  .submit-button:hover {
+    background-color: #66bb6a; /* Verde más claro */
+    color: #fff; /* Asegura que el texto se mantenga blanco */
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 4px 12px rgba(56, 142, 60, 0.3); /* Sombra adicional para efecto 3D */
+  }
+  
+  /* Estilo para el botón de envío al hacer clic */
+  .submit-button:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.2); /* Sombra más tenue al hacer clic */
+  }
+  
